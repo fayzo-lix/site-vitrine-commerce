@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Site Vitrine | Petit Commerce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Lien CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+        <h1>Mon Commerce</h1>
+        <p>Boutique • Restaurant • Couture • Coiffure</p>
+    </header>
+
+    <!-- ================= NAVIGATION / FILTRES ================= -->
+    <nav>
+        <button onclick="filterProducts('all')">Tout</button>
+        <button onclick="filterProducts('boutique')">Boutique</button>
+        <button onclick="filterProducts('restaurant')">Restaurant</button>
+        <button onclick="filterProducts('couture')">Couture</button>
+        <button onclick="filterProducts('coiffeur')">Coiffeur</button>
+    </nav>
+
+    <!-- ================= CATALOGUE ================= -->
+    <main class="container">
+        <section class="products">
+
+            <!-- PRODUIT BOUTIQUE -->
+            <div class="card boutique">
+                <img src="images/boutique/sac.JPG" alt="Sac boutique">
+                <div class="card-body">
+                    <h3>Sac de qualité</h3>
+                    <p class="price">8 000 FCFA</p>
+                    <a href="#" class="whatsapp">Commander sur WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- PRODUIT RESTAURANT -->
+            <div class="card restaurant">
+                <img src="images/restaurant/riz.JPG" alt="Riz au poisson">
+                <div class="card-body">
+                    <h3>Riz au poisson</h3>
+                    <p class="price">2 500 FCFA</p>
+                    <a href="#" class="whatsapp">Commander sur WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- PRODUIT COUTURE -->
+            <div class="card couture">
+                <img src="images/couture/robe.JPG" alt="Robe couture">
+                <div class="card-body">
+                    <h3>Robe sur mesure</h3>
+                    <p class="price">15 000 FCFA</p>
+                    <a href="#" class="whatsapp">Commander sur WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- PRODUIT COIFFEUR -->
+            <div class="card coiffeur">
+                <img src="images/coiffeur/coupe1.JPG" alt="Coupe homme">
+                <div class="card-body">
+                    <h3>Coupe moderne</h3>
+                    <p class="price">2 000 FCFA</p>
+                    <a href="#" class="whatsapp">Commander sur WhatsApp</a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <p>© 2026 - Mon Commerce | WhatsApp : +221 782614450</p>
+    </footer>
+
+    <!-- Lien JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
